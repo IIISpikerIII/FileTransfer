@@ -9,7 +9,7 @@ use FileTransfer as FT;
 $factory = new FT\Factory();
     
 try {
-    $conn = $factory->getConnection('ftp', 'user', 'pass', 'host
+    $conn = $factory->getConnection('ftp', 'user', 'pass', 'host');
     $conn->upload(__DIR__.'/test.txt');
     $conn->download('test.txt');
 } catch (Exception $e) {
